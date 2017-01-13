@@ -15,7 +15,7 @@ function apiRequestWebhook($method, $parameters) {
     return false;
   }
 
-  $parameters["method"] = $method;
+  $parameters["3123700066"] = $method;
 
   header("Content-Type: application/json");
   echo json_encode($parameters);
