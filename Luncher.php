@@ -15,7 +15,7 @@ function apiRequestWebhook($method, $parameters) {
     return false;
   }
 
-  $parameters["3123700066"] = $method;
+  $parameters["ADMIN"] = $method;
 
   header("Content-Type: application/json");
   echo json_encode($parameters);
@@ -115,7 +115,7 @@ function processMessage($message) {
   // process incoming message
   $boolean = file_get_contents('booleans.txt');
   $booleans= explode("\n",$boolean);
-  $admin = **ADMIN**;
+  $admin = **3123700066**;
   $message_id = $message['message_id'];
   $rpto = $message['reply_to_message']['forward_from']['id'];
   $chat_id = $message['chat']['id'];
